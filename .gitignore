@@ -1,0 +1,11 @@
+node_modules/
+**/node_modules/
+target/
+**/target/
+.env
+**/.env
+*.log
+.vscode/
+.idea/
+dist/
+**/dist/

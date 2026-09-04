@@ -1,0 +1,598 @@
+/* =========================================================
+   Payment Intelligence — Dark Mode
+   Professional Dark Theme
+   ========================================================= */
+
+/* =========================================================
+   DARK MODE TOKENS
+   ========================================================= */
+
+html.dark-mode {
+  color-scheme: dark;
+
+  --dark-bg: #0b1020;
+  --dark-surface: #111827;
+  --dark-surface-2: #182235;
+
+  --dark-border: #263247;
+  --dark-border-soft: #1d2939;
+
+  --dark-text: #f8fafc;
+  --dark-text-secondary: #cbd5e1;
+  --dark-muted: #94a3b8;
+
+  --dark-input: #0f172a;
+
+  --dark-hover: #172033;
+  --dark-active: #1d2a40;
+
+  --dark-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html.dark-mode,
+html.dark-mode body {
+  background: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
+}
+
+html.dark-mode body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   APP LAYOUT
+   ========================================================= */
+
+html.dark-mode .app-shell,
+html.dark-mode .main-wrapper,
+html.dark-mode .page-content {
+  background: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+html.dark-mode .sidebar {
+  background: #0a0f1c !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text) !important;
+  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.12);
+}
+
+html.dark-mode .brand-name {
+  color: var(--dark-text) !important;
+}
+
+html.dark-mode .brand-subtitle {
+  color: var(--dark-muted) !important;
+}
+
+html.dark-mode .nav-section-label {
+  color: #64748b !important;
+}
+
+html.dark-mode .nav-item,
+html.dark-mode .merchant-selector,
+html.dark-mode .sidebar-close {
+  color: var(--dark-muted) !important;
+}
+
+html.dark-mode .nav-item {
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+
+html.dark-mode .nav-item:hover {
+  background: var(--dark-hover) !important;
+  color: var(--dark-text-secondary) !important;
+}
+
+html.dark-mode .nav-item.active {
+  background: var(--dark-active) !important;
+  color: #ffffff !important;
+}
+
+html.dark-mode .nav-item.active svg {
+  color: #60a5fa !important;
+}
+
+html.dark-mode .merchant-selector:hover {
+  background: var(--dark-hover) !important;
+}
+
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+html.dark-mode .topbar {
+  background: rgba(11, 16, 32, 0.96) !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text) !important;
+  backdrop-filter: blur(12px);
+}
+
+html.dark-mode .profile-button,
+html.dark-mode .icon-button,
+html.dark-mode .mobile-menu {
+  color: var(--dark-muted) !important;
+  background: transparent !important;
+}
+
+html.dark-mode .profile-button:hover,
+html.dark-mode .icon-button:hover,
+html.dark-mode .mobile-menu:hover {
+  background: var(--dark-hover) !important;
+  color: var(--dark-text) !important;
+}
+
+html.dark-mode .profile-name {
+  color: var(--dark-text) !important;
+}
+
+html.dark-mode .profile-role {
+  color: var(--dark-muted) !important;
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+html.dark-mode .search-box {
+  background: var(--dark-input) !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text) !important;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+html.dark-mode .search-box input {
+  background: transparent !important;
+  color: var(--dark-text) !important;
+  border-color: transparent !important;
+}
+
+html.dark-mode .search-box input::placeholder {
+  color: #64748b !important;
+}
+
+html.dark-mode .search-box:focus-within {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.14);
+}
+
+
+/* =========================================================
+   PANELS / CARDS
+   ========================================================= */
+
+html.dark-mode .panel,
+html.dark-mode .metric-card,
+html.dark-mode .module-card,
+html.dark-mode .business-insight-card,
+html.dark-mode .risk-score-card,
+html.dark-mode .module-empty-state {
+  background: var(--dark-surface) !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text) !important;
+  box-shadow: var(--dark-shadow);
+}
+
+html.dark-mode .module-card:hover {
+  border-color: #34445d !important;
+  background: #131d2e !important;
+}
+
+html.dark-mode .panel-header {
+  border-color: var(--dark-border-soft) !important;
+}
+
+html.dark-mode .panel-header h2,
+html.dark-mode .panel-header h3 {
+  color: var(--dark-text) !important;
+  letter-spacing: -0.015em;
+}
+
+html.dark-mode .panel-header p {
+  color: var(--dark-muted) !important;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6,
+html.dark-mode strong {
+  color: var(--dark-text) !important;
+}
+
+html.dark-mode p {
+  color: var(--dark-text-secondary);
+}
+
+html.dark-mode .metric-value {
+  color: var(--dark-text) !important;
+}
+
+html.dark-mode .metric-label {
+  color: var(--dark-text-secondary) !important;
+}
+
+html.dark-mode .metric-note {
+  color: var(--dark-muted) !important;
+}
+
+html.dark-mode .summary-label {
+  color: var(--dark-text-secondary) !important;
+}
+
+html.dark-mode .module-status {
+  color: var(--dark-muted) !important;
+}
+
+html.dark-mode .analysis-empty {
+  color: var(--dark-muted) !important;
+}
+
+html.dark-mode .table-footer {
+  color: var(--dark-muted) !important;
+}
+
+
+/* =========================================================
+   INPUTS / SELECTS / TEXTAREA
+   ========================================================= */
+
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea {
+  background: var(--dark-input) !important;
+  color: var(--dark-text) !important;
+  border-color: var(--dark-border) !important;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: #64748b !important;
+}
+
+html.dark-mode input:focus,
+html.dark-mode select:focus,
+html.dark-mode textarea:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.14);
+  outline: none;
+}
+
+html.dark-mode option {
+  background: var(--dark-input);
+  color: var(--dark-text);
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+html.dark-mode table {
+  color: var(--dark-text) !important;
+  border-color: var(--dark-border) !important;
+}
+
+html.dark-mode th {
+  background: #0f172a !important;
+  color: #94a3b8 !important;
+  border-color: var(--dark-border) !important;
+}
+
+html.dark-mode td {
+  color: #e5e7eb !important;
+  border-color: var(--dark-border) !important;
+}
+
+html.dark-mode tbody tr {
+  background: transparent !important;
+}
+
+html.dark-mode tbody tr:hover td {
+  background: var(--dark-surface-2) !important;
+}
+
+html.dark-mode tr:hover td {
+  background: var(--dark-surface-2) !important;
+}
+
+
+/* =========================================================
+   CODE / TECHNICAL CONTENT
+   ========================================================= */
+
+html.dark-mode code,
+html.dark-mode pre {
+  color: #dbeafe !important;
+  background: #0f172a !important;
+  border-color: var(--dark-border) !important;
+}
+
+
+/* =========================================================
+   OPERATIONS / ACTIVITY
+   ========================================================= */
+
+html.dark-mode .operation-row {
+  border-color: var(--dark-border-soft) !important;
+}
+
+html.dark-mode .operation-row:hover {
+  background: var(--dark-surface-2) !important;
+}
+
+
+/* =========================================================
+   ICON CONTAINERS
+   ========================================================= */
+
+html.dark-mode .module-icon,
+html.dark-mode .module-card-icon {
+  background: var(--dark-surface-2) !important;
+  color: #bfdbfe !important;
+}
+
+html.dark-mode .module-icon svg,
+html.dark-mode .module-card-icon svg {
+  color: inherit !important;
+}
+
+
+/* =========================================================
+   STATUS / BADGES
+   ========================================================= */
+
+html.dark-mode .theme-setting-status {
+  border-color: var(--dark-border-soft) !important;
+  color: var(--dark-muted) !important;
+}
+
+html.dark-mode .theme-setting-info p {
+  color: var(--dark-muted) !important;
+}
+
+
+/* =========================================================
+   SETTINGS — THEME ROW
+   ========================================================= */
+
+.theme-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px 0 4px;
+}
+
+.theme-setting-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 6px;
+}
+
+.theme-setting-title h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.theme-setting-info p {
+  margin: 0;
+  color: var(--muted-text, #6b7280);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   THEME TOGGLE
+   ========================================================= */
+
+.theme-toggle {
+  position: relative;
+  width: 54px;
+  height: 30px;
+  flex-shrink: 0;
+
+  padding: 0;
+
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+
+  background: #d1d5db;
+
+  cursor: pointer;
+
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.theme-toggle:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 3px;
+}
+
+.theme-toggle.is-on {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.theme-toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+
+  transition:
+    left 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.theme-toggle:hover .theme-toggle-knob {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle.is-on .theme-toggle-knob {
+  left: 27px;
+}
+
+
+/* =========================================================
+   DARK MODE — THEME TOGGLE
+   ========================================================= */
+
+html.dark-mode .theme-toggle {
+  border-color: #334155;
+}
+
+html.dark-mode .theme-toggle:not(.is-on) {
+  background: #263247;
+}
+
+html.dark-mode .theme-toggle.is-on {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+
+/* =========================================================
+   SETTINGS STATUS
+   ========================================================= */
+
+.theme-setting-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 18px;
+  padding-top: 14px;
+
+  border-top: 1px solid #e5e7eb;
+
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+html.dark-mode button {
+  color: inherit;
+}
+
+html.dark-mode .secondary-button,
+html.dark-mode .ghost-button {
+  background: var(--dark-surface-2) !important;
+  color: var(--dark-text-secondary) !important;
+  border-color: var(--dark-border) !important;
+}
+
+html.dark-mode .secondary-button:hover,
+html.dark-mode .ghost-button:hover {
+  background: var(--dark-hover) !important;
+  color: var(--dark-text) !important;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+html.dark-mode a {
+  color: #60a5fa;
+}
+
+html.dark-mode a:hover {
+  color: #93c5fd;
+}
+
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+
+html.dark-mode ::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+html.dark-mode ::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+  border: 2px solid var(--dark-bg);
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  html.dark-mode .sidebar {
+    box-shadow: 12px 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .theme-setting-row {
+    align-items: flex-start;
+  }
+
+  .theme-setting-info {
+    min-width: 0;
+  }
+}
