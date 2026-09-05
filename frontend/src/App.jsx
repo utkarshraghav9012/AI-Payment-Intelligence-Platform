@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://ai-payment-intelligence-platform.onrender.com";
 
 const navigation = [
   {
